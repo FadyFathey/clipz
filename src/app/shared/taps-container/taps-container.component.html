@@ -1,0 +1,12 @@
+<!-- Tabs -->
+<ul class="flex flex-wrap mb-6 bg-dark-accent/50 rounded-lg p-1">
+  <li *ngFor="let tab of tabs" class="flex-auto text-center">
+    <a
+      id="login-tab"
+      class="block rounded-md py-3 px-4 transition-all duration-300 font-bold tab-active"
+      (click)="selectTab(tab)"
+      >{{ tab.title }}</a
+    >
+  </li>
+</ul>
+<ng-content></ng-content>

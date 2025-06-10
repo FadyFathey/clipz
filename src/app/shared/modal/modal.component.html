@@ -1,0 +1,60 @@
+<!-- ===== AUTH MODAL ===== -->
+<!-- The 'hidden' class is removed here so you can see the modal by default -->
+<div
+  id="auth-modal"
+  [ngClass]="{ hidden: !modalService.isModalOpen(modalId) }"
+  class="fixed z-50 inset-0 overflow-y-auto"
+>
+  <div
+    class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+  >
+    <!-- Modal BG Overlay -->
+    <div
+      (click)="closeModal()"
+      class="fixed inset-0 transition-opacity"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0 bg-dark-bg/90 backdrop-blur-sm"></div>
+    </div>
+
+    <!-- This element is to trick the browser into centering the modal contents. -->
+    <span
+      class="hidden sm:inline-block sm:align-middle sm:h-screen"
+      aria-hidden="true"
+      >&#8203;</span
+    >
+
+    <div
+      class="inline-block align-bottom bg-dark-card rounded-2xl text-left overflow-hidden shadow-[0_0_40px_rgba(0,245,255,0.2)] transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full border-2 border-neon-blue/30"
+    >
+      <div class="p-8">
+        <!-- Title and Close Button -->
+        <div
+          (click)="closeModal()"
+          class="flex justify-between items-center pb-6"
+        >
+          <ng-content select="[heading]"></ng-content>
+          <div
+            id="modal-close-btn"
+            class="cursor-pointer z-50 text-gray-400 hover:text-neon-blue transition-colors duration-300 transform hover:rotate-90"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

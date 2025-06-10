@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+}
+.hero-bg {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+}
+.neon-glow {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor,
+    0 0 40px currentColor;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 245, 255, 0.2);
+}

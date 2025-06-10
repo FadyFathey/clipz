@@ -1,0 +1,116 @@
+<app-modal modalId="auth">
+  <p
+    class="text-3xl font-gaming font-bold text-white neon-glow bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent"
+    heading
+  >
+    Your Account
+  </p>
+  <app-taps-container tabTitle="Login">
+    <app-tap>
+      <!-- Login Form -->
+      <form id="login-form">
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+        <!-- Password -->
+        <div class="mb-6">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="block w-full bg-gradient-to-r from-neon-blue to-neon-purple text-white py-3 px-4 rounded-lg font-bold transition-all duration-300 hover:from-neon-purple hover:to-neon-pink glow-effect transform hover:scale-105"
+        >
+          Submit
+        </button>
+      </form>
+    </app-tap>
+    <app-tap tabTitle="Register">
+      <!-- Registration Form (set to hidden by default for visual clarity) -->
+      <form id="register-form" class="hidden">
+        <!-- Name -->
+        <div class="mb-4">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Name</label
+          >
+          <input
+            type="text"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Enter Name"
+            required
+          />
+        </div>
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+        <!-- Age -->
+        <div class="mb-4">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Age</label
+          >
+          <input
+            type="number"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Enter Your Age"
+            required
+          />
+        </div>
+        <!-- Password -->
+        <div class="mb-4">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <!-- Confirm Password -->
+        <div class="mb-6">
+          <label class="inline-block mb-2 text-gray-300 font-semibold"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            class="block w-full py-2.5 px-4 text-white border-2 border-dark-accent rounded-lg bg-dark-bg transition duration-300 focus:outline-none focus:border-neon-blue"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="block w-full bg-gradient-to-r from-neon-blue to-neon-purple text-white py-3 px-4 rounded-lg font-bold transition-all duration-300 hover:from-neon-purple hover:to-neon-pink glow-effect transform hover:scale-105"
+        >
+          Submit
+        </button>
+      </form>
+    </app-tap>
+  </app-taps-container>
+</app-modal>

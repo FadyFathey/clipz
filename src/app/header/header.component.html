@@ -1,0 +1,142 @@
+<!-- ===== HERO SECTION ===== -->
+<section
+  class="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  <!-- Video Background -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23000a0f'/%3E%3Cstop offset='50%25' style='stop-color:%231a1a2e'/%3E%3Cstop offset='100%25' style='stop-color:%2316213e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23bg)'/%3E%3C/svg%3E"
+  >
+    <!-- Fallback for browsers that don't support the video format -->
+    <source
+      src="https://sample-videos.com/zip/10mp4/mp4/SampleVideo_1280x720_1mb.mp4"
+      type="video/mp4"
+    />
+    <source src="../../assets/video/hero.webm" type="video/webm" />
+    <!-- Gaming-themed video URLs - these would be replaced with actual gaming footage -->
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark Overlay for Better Text Readability -->
+  <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+  <!-- Animated Gradient Overlays for Gaming Effect -->
+  <div class="absolute inset-0 z-20">
+    <div
+      class="absolute -top-40 -right-40 w-80 h-80 bg-neon-blue/10 rounded-full blur-xl animate-pulse"
+    ></div>
+    <div
+      class="absolute -bottom-40 -left-40 w-80 h-80 bg-neon-purple/10 rounded-full blur-xl animate-pulse"
+    ></div>
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neon-pink/5 rounded-full blur-2xl animate-pulse"
+    ></div>
+  </div>
+
+  <div class="relative z-30 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <h1 class="text-4xl sm:text-6xl lg:text-8xl font-gaming font-black mb-8">
+      <span
+        class="bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent neon-glow drop-shadow-2xl"
+      >
+        CLIP IT AND SHIP IT!
+      </span>
+    </h1>
+
+    <p
+      class="text-xl sm:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
+    >
+      The ultimate platform for gamers to share their most epic moments. Upload,
+      showcase, and discover the best gaming clips from around the world.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <button
+        class="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink text-white px-10 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 glow-effect shadow-2xl"
+      >
+        Get Started
+      </button>
+      <button
+        class="border-2 border-white/80 text-white hover:bg-white hover:text-dark-bg px-10 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+      >
+        Watch Demo
+      </button>
+    </div>
+  </div>
+
+  <!-- Video Controls Overlay (Optional) -->
+  <!-- <div class="absolute bottom-4 right-4 z-40 flex space-x-2">
+    <button
+      id="video-toggle"
+      class="bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 backdrop-blur-sm"
+    >
+      <svg
+        id="play-icon"
+        class="w-5 h-5 hidden"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+        ></path>
+      </svg>
+      <svg
+        id="pause-icon"
+        class="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M5.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75A.75.75 0 007.25 3h-1.5zM12.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75a.75.75 0 00-.75-.75h-1.5z"
+        ></path>
+      </svg>
+    </button>
+    <button
+      id="sound-toggle"
+      class="bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 backdrop-blur-sm"
+    >
+      <svg
+        id="sound-off-icon"
+        class="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.824L4.618 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.618l3.765-3.824a1 1 0 011.617.824zM12 8.414l1.414-1.414L15 8.586 16.414 7 18 8.586 16.414 10.414 18 12 16.414 13.414 15 11.828 13.414 13.414 12 11.828 13.414 10.414 12 8.414z"
+        />
+      </svg>
+      <svg
+        id="sound-on-icon"
+        class="w-5 h-5 hidden"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.824L4.618 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.618l3.765-3.824a1 1 0 011.617.824zM12.025 6.05a1 1 0 011.95.316 4.978 4.978 0 010 7.268 1 1 0 11-1.95-.316 2.978 2.978 0 000-4.952zM15.026 4.219a1 1 0 011.95.562 8.972 8.972 0 010 9.438 1 1 0 11-1.95-.562 6.972 6.972 0 000-7.438z"
+        />
+      </svg>
+    </button>
+  </div> -->
+
+  <!-- Scroll Indicator -->
+  <div
+    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+  >
+    <svg
+      class="w-6 h-6 text-neon-blue"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+      ></path>
+    </svg>
+  </div>
+</section>
